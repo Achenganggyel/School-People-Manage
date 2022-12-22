@@ -1,0 +1,48 @@
+Date : 2022-12-08 23:06:42
+Directory : d:\desktop\SchoolPeople_Manage-master
+Total : 16 files,  442 codes, 3 comments, 30 blanks, all 475 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| vue        |         12 |        422 |          3 |         32 |        457 |
+| Markdown   |          2 |         25 |          0 |         -2 |         23 |
+| TypeScript |          2 |         -5 |          0 |          0 |         -5 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |         16 |        442 |          3 |         30 |        475 |
+| src                                                                        |         13 |        415 |          3 |         32 |        450 |
+| src\components                                                             |          2 |        -17 |          0 |          5 |        -12 |
+| src\router                                                                 |          1 |         -7 |          0 |          0 |         -7 |
+| src\views                                                                  |         10 |        439 |          3 |         27 |        469 |
+| src\views\management                                                       |          4 |        716 |          4 |         48 |        768 |
+| 文字资料                                                                       |          1 |         64 |          0 |         14 |         78 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                   | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\desktop\SchoolPeople_Manage-master\README.md                              | Markdown   |        -39 |          0 |        -16 |        -55 |
+| d:\desktop\SchoolPeople_Manage-master\components.d.ts                        | TypeScript |          2 |          0 |          0 |          2 |
+| d:\desktop\SchoolPeople_Manage-master\src\components\header.vue              | vue        |          4 |          0 |          1 |          5 |
+| d:\desktop\SchoolPeople_Manage-master\src\components\sidebar.vue             | vue        |        -21 |          0 |          4 |        -17 |
+| d:\desktop\SchoolPeople_Manage-master\src\router\index.ts                    | TypeScript |         -7 |          0 |          0 |         -7 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\dashboard.vue                | vue        |         -4 |          0 |          0 |         -4 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\donate.vue                   | vue        |        -12 |          0 |         -3 |        -15 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\info.vue                     | vue        |          9 |          0 |          2 |         11 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\mobile_worker.vue | vue        |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\student.vue       | vue        |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\stuff.vue         | vue        |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\teacher.vue       | vue        |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\markdown.vue                 | vue        |        -19 |          0 |         -3 |        -22 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\table.vue                    | vue        |       -179 |         -1 |        -12 |       -192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\upload.vue                   | vue        |        -72 |          0 |         -5 |        -77 |
+| d:\desktop\SchoolPeople_Manage-master\文字资料\数据库定义.md                          | Markdown   |         64 |          0 |         14 |         78 |
+| Total                                                                      |            |        442 |          3 |         30 |        475 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+

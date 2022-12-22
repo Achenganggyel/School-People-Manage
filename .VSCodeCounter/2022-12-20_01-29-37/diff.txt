@@ -1,0 +1,152 @@
+Date : 2022-12-20 01:29:37
+Directory : d:\desktop\SchoolPeople_Manage
+Total : 92 files,  198 codes, 18 comments, 19 blanks, all 235 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JavaScript         |          3 |        177 |         19 |         17 |        213 |
+| vue                |         42 |         31 |          0 |          4 |         35 |
+| HTML               |          2 |          0 |          0 |          0 |          0 |
+| Markdown           |          6 |          0 |          0 |          0 |          0 |
+| TypeScript         |         22 |          0 |          0 |          0 |          0 |
+| JSON with Comments |          2 |          0 |          0 |          0 |          0 |
+| JSON               |          8 |          0 |          0 |          0 |          0 |
+| CSS                |          6 |          0 |          0 |          0 |          0 |
+| YAML               |          1 |        -10 |         -1 |         -2 |        -13 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         92 |        198 |         18 |         19 |        235 |
+| ..                                                                           |         45 |     -4,765 |        -22 |       -303 |     -5,090 |
+| ..\SchoolPeople_Manage-master                                                |         45 |     -4,765 |        -22 |       -303 |     -5,090 |
+| ..\SchoolPeople_Manage-master\.github                                        |          1 |        -10 |         -1 |         -2 |        -13 |
+| ..\SchoolPeople_Manage-master\public                                         |          1 |        -40 |          0 |          0 |        -40 |
+| ..\SchoolPeople_Manage-master\src                                            |         32 |     -3,100 |        -16 |       -229 |     -3,345 |
+| ..\SchoolPeople_Manage-master\src\api                                        |          1 |         -7 |          0 |         -2 |         -9 |
+| ..\SchoolPeople_Manage-master\src\assets                                     |          3 |       -192 |         -4 |        -37 |       -233 |
+| ..\SchoolPeople_Manage-master\src\assets\css                                 |          3 |       -192 |         -4 |        -37 |       -233 |
+| ..\SchoolPeople_Manage-master\src\components                                 |          3 |       -442 |         -4 |        -31 |       -477 |
+| ..\SchoolPeople_Manage-master\src\router                                     |          1 |       -135 |         -1 |         -4 |       -140 |
+| ..\SchoolPeople_Manage-master\src\store                                      |          3 |        -86 |          0 |         -8 |        -94 |
+| ..\SchoolPeople_Manage-master\src\utils                                      |          1 |        -27 |          0 |         -5 |        -32 |
+| ..\SchoolPeople_Manage-master\src\views                                      |         17 |     -2,169 |         -4 |       -134 |     -2,307 |
+| ..\SchoolPeople_Manage-master\src\views\management                           |          4 |       -716 |         -4 |        -48 |       -768 |
+| ..\SchoolPeople_Manage-master\文字资料                                           |          1 |        -64 |          0 |        -14 |        -78 |
+| public                                                                       |          1 |         40 |          0 |          0 |         40 |
+| src                                                                          |         35 |      3,308 |         35 |        250 |      3,593 |
+| src\api                                                                      |          2 |        157 |         10 |         13 |        180 |
+| src\assets                                                                   |          3 |        192 |          4 |         37 |        233 |
+| src\assets\css                                                               |          3 |        192 |          4 |         37 |        233 |
+| src\components                                                               |          3 |        442 |          4 |         33 |        479 |
+| src\router                                                                   |          1 |        135 |          1 |          4 |        140 |
+| src\server                                                                   |          2 |         27 |          9 |          6 |         42 |
+| src\store                                                                    |          3 |         86 |          0 |          8 |         94 |
+| src\utils                                                                    |          1 |         27 |          0 |          5 |         32 |
+| src\views                                                                    |         17 |      2,200 |          4 |        136 |      2,340 |
+| src\views\management                                                         |          4 |        743 |          4 |         50 |        797 |
+| 文字资料                                                                         |          1 |         64 |          0 |         14 |         78 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                     | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| d:\desktop\SchoolPeople_Manage-master\.github\FUNDING.yml                    | YAML               |        -10 |         -1 |         -2 |        -13 |
+| d:\desktop\SchoolPeople_Manage-master\README.md                              | Markdown           |        -65 |          0 |        -18 |        -83 |
+| d:\desktop\SchoolPeople_Manage-master\README_EN.md                           | Markdown           |        -93 |          0 |        -27 |       -120 |
+| d:\desktop\SchoolPeople_Manage-master\auto-imports.d.ts                      | TypeScript         |         -3 |         -1 |         -2 |         -6 |
+| d:\desktop\SchoolPeople_Manage-master\components.d.ts                        | TypeScript         |        -49 |         -3 |         -3 |        -55 |
+| d:\desktop\SchoolPeople_Manage-master\index.html                             | HTML               |        -18 |         -1 |         -3 |        -22 |
+| d:\desktop\SchoolPeople_Manage-master\package-lock.json                      | JSON               |     -1,237 |          0 |         -1 |     -1,238 |
+| d:\desktop\SchoolPeople_Manage-master\package.json                           | JSON               |        -37 |          0 |         -1 |        -38 |
+| d:\desktop\SchoolPeople_Manage-master\public\table.json                      | JSON               |        -40 |          0 |          0 |        -40 |
+| d:\desktop\SchoolPeople_Manage-master\src\App.vue                            | vue                |         -7 |          0 |         -2 |         -9 |
+| d:\desktop\SchoolPeople_Manage-master\src\api\index.ts                       | TypeScript         |         -7 |          0 |         -2 |         -9 |
+| d:\desktop\SchoolPeople_Manage-master\src\assets\css\color-dark.css          | CSS                |        -28 |          0 |          0 |        -28 |
+| d:\desktop\SchoolPeople_Manage-master\src\assets\css\icon.css                | CSS                |         -4 |          0 |          0 |         -4 |
+| d:\desktop\SchoolPeople_Manage-master\src\assets\css\main.css                | CSS                |       -160 |         -4 |        -37 |       -201 |
+| d:\desktop\SchoolPeople_Manage-master\src\components\header.vue              | vue                |       -150 |         -4 |         -6 |       -160 |
+| d:\desktop\SchoolPeople_Manage-master\src\components\sidebar.vue             | vue                |       -138 |          0 |        -10 |       -148 |
+| d:\desktop\SchoolPeople_Manage-master\src\components\tags.vue                | vue                |       -154 |          0 |        -15 |       -169 |
+| d:\desktop\SchoolPeople_Manage-master\src\main.ts                            | TypeScript         |        -28 |         -2 |         -4 |        -34 |
+| d:\desktop\SchoolPeople_Manage-master\src\router\index.ts                    | TypeScript         |       -135 |         -1 |         -4 |       -140 |
+| d:\desktop\SchoolPeople_Manage-master\src\store\permiss.ts                   | TypeScript         |        -21 |          0 |         -3 |        -24 |
+| d:\desktop\SchoolPeople_Manage-master\src\store\sidebar.ts                   | TypeScript         |        -14 |          0 |         -2 |        -16 |
+| d:\desktop\SchoolPeople_Manage-master\src\store\tags.ts                      | TypeScript         |        -51 |          0 |         -3 |        -54 |
+| d:\desktop\SchoolPeople_Manage-master\src\utils\request.ts                   | TypeScript         |        -27 |          0 |         -5 |        -32 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\403.vue                      | vue                |        -51 |          0 |         -4 |        -55 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\404.vue                      | vue                |        -51 |          0 |         -4 |        -55 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\charts.vue                   | vue                |       -124 |          0 |         -4 |       -128 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\dashboard.vue                | vue                |       -270 |          0 |        -25 |       -295 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\editor.vue                   | vue                |        -34 |          0 |         -4 |        -38 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\form.vue                     | vue                |       -154 |          0 |         -3 |       -157 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\home.vue                     | vue                |        -25 |          0 |         -2 |        -27 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\icon.vue                     | vue                |       -209 |          0 |         -4 |       -213 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\info.vue                     | vue                |         -9 |          0 |         -2 |        -11 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\login.vue                    | vue                |       -123 |          0 |         -7 |       -130 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\mobile_worker.vue | vue                |       -179 |         -1 |        -12 |       -192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\student.vue       | vue                |       -179 |         -1 |        -12 |       -192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\stuff.vue         | vue                |       -179 |         -1 |        -12 |       -192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\management\teacher.vue       | vue                |       -179 |         -1 |        -12 |       -192 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\permission.vue               | vue                |       -127 |          0 |        -11 |       -138 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\tabs.vue                     | vue                |       -112 |          0 |         -5 |       -117 |
+| d:\desktop\SchoolPeople_Manage-master\src\views\user.vue                     | vue                |       -164 |          0 |        -11 |       -175 |
+| d:\desktop\SchoolPeople_Manage-master\src\vite-env.d.ts                      | TypeScript         |         -7 |         -1 |         -2 |        -10 |
+| d:\desktop\SchoolPeople_Manage-master\tsconfig.json                          | JSON with Comments |        -18 |          0 |         -1 |        -19 |
+| d:\desktop\SchoolPeople_Manage-master\tsconfig.node.json                     | JSON               |         -9 |          0 |         -1 |        -10 |
+| d:\desktop\SchoolPeople_Manage-master\vite.config.ts                         | TypeScript         |        -22 |          0 |         -1 |        -23 |
+| d:\desktop\SchoolPeople_Manage-master\文字资料\数据库定义.md                          | Markdown           |        -64 |          0 |        -14 |        -78 |
+| d:\desktop\SchoolPeople_Manage\README.md                                     | Markdown           |         65 |          0 |         18 |         83 |
+| d:\desktop\SchoolPeople_Manage\README_EN.md                                  | Markdown           |         93 |          0 |         27 |        120 |
+| d:\desktop\SchoolPeople_Manage\auto-imports.d.ts                             | TypeScript         |          3 |          1 |          2 |          6 |
+| d:\desktop\SchoolPeople_Manage\components.d.ts                               | TypeScript         |         49 |          3 |          3 |         55 |
+| d:\desktop\SchoolPeople_Manage\index.html                                    | HTML               |         18 |          1 |          3 |         22 |
+| d:\desktop\SchoolPeople_Manage\package-lock.json                             | JSON               |      1,237 |          0 |          1 |      1,238 |
+| d:\desktop\SchoolPeople_Manage\package.json                                  | JSON               |         37 |          0 |          1 |         38 |
+| d:\desktop\SchoolPeople_Manage\public\table.json                             | JSON               |         40 |          0 |          0 |         40 |
+| d:\desktop\SchoolPeople_Manage\src\App.vue                                   | vue                |          7 |          0 |          2 |          9 |
+| d:\desktop\SchoolPeople_Manage\src\api\SysUser.js                            | JavaScript         |        150 |         10 |         11 |        171 |
+| d:\desktop\SchoolPeople_Manage\src\api\index.ts                              | TypeScript         |          7 |          0 |          2 |          9 |
+| d:\desktop\SchoolPeople_Manage\src\assets\css\color-dark.css                 | CSS                |         28 |          0 |          0 |         28 |
+| d:\desktop\SchoolPeople_Manage\src\assets\css\icon.css                       | CSS                |          4 |          0 |          0 |          4 |
+| d:\desktop\SchoolPeople_Manage\src\assets\css\main.css                       | CSS                |        160 |          4 |         37 |        201 |
+| d:\desktop\SchoolPeople_Manage\src\components\header.vue                     | vue                |        150 |          4 |          6 |        160 |
+| d:\desktop\SchoolPeople_Manage\src\components\sidebar.vue                    | vue                |        133 |          0 |         10 |        143 |
+| d:\desktop\SchoolPeople_Manage\src\components\tags.vue                       | vue                |        159 |          0 |         17 |        176 |
+| d:\desktop\SchoolPeople_Manage\src\main.ts                                   | TypeScript         |         28 |          2 |          4 |         34 |
+| d:\desktop\SchoolPeople_Manage\src\router\index.ts                           | TypeScript         |        135 |          1 |          4 |        140 |
+| d:\desktop\SchoolPeople_Manage\src\server\db.js                              | JavaScript         |          9 |          1 |          0 |         10 |
+| d:\desktop\SchoolPeople_Manage\src\server\index.js                           | JavaScript         |         18 |          8 |          6 |         32 |
+| d:\desktop\SchoolPeople_Manage\src\store\permiss.ts                          | TypeScript         |         21 |          0 |          3 |         24 |
+| d:\desktop\SchoolPeople_Manage\src\store\sidebar.ts                          | TypeScript         |         14 |          0 |          2 |         16 |
+| d:\desktop\SchoolPeople_Manage\src\store\tags.ts                             | TypeScript         |         51 |          0 |          3 |         54 |
+| d:\desktop\SchoolPeople_Manage\src\utils\request.ts                          | TypeScript         |         27 |          0 |          5 |         32 |
+| d:\desktop\SchoolPeople_Manage\src\views\403.vue                             | vue                |         51 |          0 |          4 |         55 |
+| d:\desktop\SchoolPeople_Manage\src\views\404.vue                             | vue                |         51 |          0 |          4 |         55 |
+| d:\desktop\SchoolPeople_Manage\src\views\charts.vue                          | vue                |        120 |          0 |          4 |        124 |
+| d:\desktop\SchoolPeople_Manage\src\views\dashboard.vue                       | vue                |        270 |          0 |         25 |        295 |
+| d:\desktop\SchoolPeople_Manage\src\views\editor.vue                          | vue                |         34 |          0 |          4 |         38 |
+| d:\desktop\SchoolPeople_Manage\src\views\form.vue                            | vue                |        154 |          0 |          3 |        157 |
+| d:\desktop\SchoolPeople_Manage\src\views\home.vue                            | vue                |         25 |          0 |          2 |         27 |
+| d:\desktop\SchoolPeople_Manage\src\views\icon.vue                            | vue                |        209 |          0 |          4 |        213 |
+| d:\desktop\SchoolPeople_Manage\src\views\info.vue                            | vue                |          9 |          0 |          2 |         11 |
+| d:\desktop\SchoolPeople_Manage\src\views\login.vue                           | vue                |        131 |          0 |          7 |        138 |
+| d:\desktop\SchoolPeople_Manage\src\views\management\mobile_worker.vue        | vue                |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage\src\views\management\student.vue              | vue                |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage\src\views\management\stuff.vue                | vue                |        179 |          1 |         12 |        192 |
+| d:\desktop\SchoolPeople_Manage\src\views\management\teacher.vue              | vue                |        206 |          1 |         14 |        221 |
+| d:\desktop\SchoolPeople_Manage\src\views\permission.vue                      | vue                |        127 |          0 |         11 |        138 |
+| d:\desktop\SchoolPeople_Manage\src\views\tabs.vue                            | vue                |        112 |          0 |          5 |        117 |
+| d:\desktop\SchoolPeople_Manage\src\views\user.vue                            | vue                |        164 |          0 |         11 |        175 |
+| d:\desktop\SchoolPeople_Manage\src\vite-env.d.ts                             | TypeScript         |          7 |          1 |          2 |         10 |
+| d:\desktop\SchoolPeople_Manage\tsconfig.json                                 | JSON with Comments |         18 |          0 |          1 |         19 |
+| d:\desktop\SchoolPeople_Manage\tsconfig.node.json                            | JSON               |          9 |          0 |          1 |         10 |
+| d:\desktop\SchoolPeople_Manage\vite.config.ts                                | TypeScript         |         22 |          0 |          1 |         23 |
+| d:\desktop\SchoolPeople_Manage\文字资料\数据库定义.md                                 | Markdown           |         64 |          0 |         14 |         78 |
+| Total                                                                        |                    |        198 |         18 |         19 |        235 |
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

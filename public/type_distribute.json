@@ -1,0 +1,31 @@
+{
+    "type":[{
+        "id":"BKS",
+        "title":"本科生",
+        "number":3340
+    },{
+        "id":"FQYJS",
+        "title":"非全日制研究生",
+        "number":1321
+    },{ 
+        "id":"QYJS",
+        "title":"全日制研究生",
+        "number":351
+    },{
+        "id":"JS",
+        "title":"教师",
+        "number":3340
+    },{
+        "id":"XZRY",
+        "title":"行政人员",
+        "number":2000
+    },{
+        "id":"LDRY",
+        "title":"流动人员",
+        "number":260
+    },{
+        "id":"JCDW",
+        "title":"基层单位",
+        "number":2000
+    }]
+}

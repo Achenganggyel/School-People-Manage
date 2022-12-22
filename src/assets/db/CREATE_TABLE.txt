@@ -1,0 +1,55 @@
+CREATE TABLE TeacherManage(  
+      `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+      `reg_time` TIMESTAMP DEFAULT NOW() COMMENT 'Create Time',
+      `name` VARCHAR(255) DEFAULT '一' ,
+      `gender` CHAR(3) DEFAULT '男',
+      `birth` DATE DEFAULT '2002-01-01' COMMENT 'birth Time',
+      `status` TINYINT DEFAULT 1 COMMENT 'work status',
+      `thism_attendance` FLOAT DEFAULT 100,
+      `college` VARCHAR(255) DEFAULT '工学院',
+      `department` VARCHAR(255) DEFAULT '计算机系',
+	`major` VARCHAR(255) DEFAULT '人工智能专业',
+      `post` VARCHAR(255) DEFAULT '讲师',
+      `mailbox` CHAR(50) DEFAULT 'yi@stu.edu.cn' COMMENT 'mail in campus',
+      `lecture` VARCHAR(255) DEFAULT''
+  ) COMMENT '';
+
+
+  CREATE TABLE StudentManage(  
+      `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+      `name` VARCHAR(255) DEFAULT '学生甲',
+      `gender` CHAR(2) DEFAULT '女',
+      `card_id` INTEGER DEFAULT 128191,
+      `birth` DATE DEFAULT '2002-01-01' COMMENT 'birth Time',
+      `status_s` TINYINT DEFAULT 2 COMMENT 'study status',
+      `status_l` TINYINT DEFAULT 1 COMMENT 'location status' ,
+      `college` VARCHAR(255) DEFAULT '工学院',
+      `department` VARCHAR(255) DEFAULT '计算机系',
+	`major` VARCHAR(255) DEFAULT '人工智能专业',
+      `mailbox` CHAR(50) DEFAULT 'jia@stu.edu.cn'COMMENT 'mail in campus',
+      `dorm` VARCHAR(255)
+  ) COMMENT '';
+
+  CREATE TABLE StuffManage(  
+      id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+      reg_time DATETIME COMMENT 'Create Time',
+      name VARCHAR(255),
+      gender CHAR(2),
+      birth DATE COMMENT 'birth Time',
+      status TINYINT COMMENT 'work status',
+      thism_attendance FLOAT,
+      department VARCHAR(255) COMMENT 'working department',
+      post VARCHAR(255),
+      mailbox CHAR(50) COMMENT 'mail in campus'
+  ) COMMENT '';
+
+  CREATE TABLE MobileManage(  
+      name VARCHAR(255),
+      gender CHAR(2),
+      entry DATE COMMENT 'Time of last entering to school',
+      avoid_reg BOOLEAN COMMENT 'for who need to enter the school more than 1',
+      status TINYINT COMMENT 'location status',
+      history TEXT
+  ) COMMENT '';
+  
+  
