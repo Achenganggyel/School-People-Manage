@@ -40,7 +40,7 @@ SCHOOLPEOPLE_MANAGE/
 
 |    |-- router 管理系统的各页面路由
 
-|    |-- server node.js和后端数据库
+|    |-- server node.js连接后端数据库
 
 |    |-- store 权限设置，动态菜单，tags标签页相关方法
 
