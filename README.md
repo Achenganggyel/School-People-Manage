@@ -12,7 +12,7 @@
 <a href="https://github.com/expressjs/express">
   <img src="https://img.shields.io/badge/express-4.16.1-brightgreen.svg" alt="express">
 </a>
-<a href="https://github.com/Achenganggyel/School-People-Manage">
+<a href="https://github.com/Achenganggyel/School-People-Manage/blob/main/LICENSE">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
 </a>
 
@@ -164,4 +164,4 @@ SCHOOLPEOPLE_MANAGE/
 
 ## License
 
-[MIT](https://github.com/Achenganggyel/School-People-Manage)
+[MIT](https://github.com/Achenganggyel/School-People-Manage/blob/main/LICENSE)
