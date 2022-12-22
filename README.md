@@ -12,7 +12,7 @@
 <a href="https://github.com/expressjs/express">
   <img src="https://img.shields.io/badge/express-4.16.1-brightgreen.svg" alt="express">
 </a>
-<a href="https://github.com/lin-xin/SchoolPeople_Manage/blob/master/LICENSE">
+<a href="https://github.com/Achenganggyel/School-People-Manage">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
 </a>
 
@@ -44,66 +44,95 @@ SCHOOLPEOPLE_MANAGE/
 |-- vite.config.ts
 |-- index.html  web网页配置，包含标签名称
 
+<br>
+
 ## 项目架构
 ![页面架构](./%E8%B5%84%E6%96%99/page_design.png)
 
+<br>
+
 ## 数据类设计
 ### 教师管理信息
+
 *属性*
 
 1）注册时间
+
 2）状态：到岗/出差/未到
+
 3）出勤率
+
 4）姓名，学院，职位
+
 5）职称
+
 6）课程信息
 
 *操作*
 
 1）数据库CRUD：增加/修改/删除/查询信息
 
+<br>
 
 ### 学生管理信息
 *属性*
 
 1）学生信息：学号，名称，学院/系
+
 2）一卡通账号
+
 3）学籍状态：休学/留校查看/在读
+
 4）邮箱账号
+
 5）宿舍
 
 *操作*
 
 1）数据库CRUD：增加/修改/删除/查询信息
+
   a）删除：删除劝退人员等
+
 2）向该名同学的邮箱发布学业/违规警告
 
+<br>
 
 ### 流动人员信息
 
 *属性*
 
 1）人员信息：名称，年龄，进校时间
+
 2）状态：仍在校/已出校
+
 3）进校原因-修改时无法修改
 
 *操作*
 
 1）数据库CRUD：增加/修改/删除/查询信息
 
+<br>
+
 ### 行政人员信息（包括辅导员）
 *属性*
 
 1）人员信息：ID，名称，年龄，注册时间
+
 2）状态：到岗/出差/未到
+
 3）出勤率
+
 4）部门
+
 5）邮箱
 
 *操作*
 
 1）数据库CRUD：增加/修改/删除/查询信息
+
 2）向该名人员的邮箱发布违规警告
+
+<br>
 
 ## 项目截图
 
@@ -113,6 +142,8 @@ SCHOOLPEOPLE_MANAGE/
 ### 首页
 ![首页](./screenshots/dashboard_page.png)
 
+<br>
+
 ## License
 
-[MIT]
+[MIT](https://github.com/Achenganggyel/School-People-Manage)
