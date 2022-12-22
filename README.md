@@ -25,23 +25,41 @@
 
 ## 项目结构
 SCHOOLPEOPLE_MANAGE/
+
 |-- screenshots 界面预览
+
 |-- src
+
 |    |-- api 前端调用本地文件和后端数据的接口
+
 |    |-- assets 资产，包括图片和数据
+
 |    |-- calc 数据相关的计算函数
+
 |    |-- components 工作台组件的设计
+
 |    |-- router 管理系统的各页面路由
+
 |    |-- server node.js和后端数据库
+
 |    |-- store 权限设置，动态菜单，tags标签页相关方法
+
 |    |-- utils 公共工具，包括axios
+
 |    |-- views 各前端页面的具体设计
+
 |    |-- App.vue 全局css样式设置
+
 |    |-- main.ts 项目配置
+
 |    |-- vite-env.d.ts
+
 |-- 文字资料 开发中记录的文件资料，包括数据库定义
+
 |-- Readme.md 项目概述
+
 |-- vite.config.ts
+
 |-- index.html  web网页配置，包含标签名称
 
 <br>
