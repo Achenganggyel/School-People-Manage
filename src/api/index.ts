@@ -11,28 +11,27 @@ export const fetchData = () => {
 
 export const fetchTeacher=()=>{
     return request({
-        url:'/teachermanage',
-        method:'get'
+        url:'./teacher.json'||'/teachermanage', 
     })
 }
 
 export const fetchStudent=()=>{
     return request({
-        url:'/studentmanage',
+        url:'./student.json'||'/studentmanage',
         method:'get'
     })
 }
 
 export const fetchStuff=()=>{
     return request({
-        url:'/stuffmanage',
+        url:'./stuff.json'||'/stuffmanage',
         method:'get'
     })
 }
 
 export const fetchMobile=()=>{
     return request({
-        url:'/mobilemanage',
+        url:'./mobile.json'||'/mobilemanage',
         method:'get'
     })
 }

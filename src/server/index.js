@@ -8,12 +8,13 @@ var conn = mysql.createConnection({      //创建mysql实例
   host: '127.0.0.1',
   user: 'root',
   password : '123456',
-  database:'sys'
+  database:'people_manage'
 })
+conn.connect()
 
 // 连接数据库
 //const conn = mysql.createConnection(models.mysql)
-conn.connect()
+
 // 老师管理表
 var teacher_db = "SELECT * FROM teachermanage"
 conn.query(teacher_db,function(err,result){

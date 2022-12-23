@@ -124,29 +124,25 @@ const role: string = name === 'admin' ? '超级管理员' : '普通用户';
 const options = {
 	type: 'bar',
 	title: {
-		text: '本周校内出勤次数直方图'
+		text: '本年平均出勤次数直方图'
 	},
 	xRorate: 25,
 	labels: ['周一', '周二', '周三', '周四', '周五'],
 	datasets: [
 		{
-			label: '行政人员',
-			data: [234, 278, 270, 190, 230]
+			label: '其他职工',
+			data: [54, 55, 56, 55,50]
 		},
 		{
 			label: '教师',
-			data: [164, 178, 190, 135, 160]
+			data: [30, 35, 34, 37,28]
 		},
-		{
-			label: '学生',
-			data: [144, 198, 150, 235, 120]
-		}
 	]
 };
 const options2 = {
 	type: 'line',
 	title: {
-		text: '本学期校内人员出勤次数折线图'
+		text: '本学期总未在校次数折线图'
 	},
 	labels: ['9月', '10月', '11月', '12月', '1月'],
 	datasets: [

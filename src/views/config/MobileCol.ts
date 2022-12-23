@@ -1,49 +1,29 @@
 export const TeacherCol = {
     cols: [{
         width: '150',  // 宽度
-        type: 'select',  // 类型
-        prop: 'manageposttype',  // prop接收数据
-        label: '分期', // label名
-        dict: 'manageposttype'  //  匹配是哪一个字典
-      },
-      {
-        width: '200',
+        prop: 'name',  // prop接收数据
+        label: '名字', // label名
+      },{
+        width: '80',  // 宽度
+        prop: 'gender',  // prop接收数据
+        label: '性别', // label名
+      },{
+        width: '100',
         type: 'input',
-        prop: 'issuingauthority',
-        label: '机构',
-      },
-      {
-        width: '150',
-        type: 'select',
-        prop: 'manageposttype',
-        label: '岗位类别',
-        dict: 'manageposttype'
-      },
-      {
-        width: '200',
-        type: 'select',
-        prop: 'careertreecode',
-        label: '岗位名称',
-        dict: 'careertreecode'
-      },
-      {
-        width: '150',
-        type: 'datePicker',
-        prop: 'manageposttype',
-        label: '报名时间',
-      },
-      {
-        width: '150',
-        type: 'select',
-        prop: 'validStatus',
-        label: '审核状态',
-        dict: 'validStatus'
-      },
-      {
-        width: '',
-        type: 'input',
-        prop: 'appliConditions',
-        label: '详细信息',
-      },
+        prop: 'entry',
+        label: '本次进入日期',
+      },{
+        width: '150',  // 宽度
+        prop: 'avoid_reg',  // prop接收数据
+        label: '免登记', // label名
+      },{
+        width: '150',  // 宽度
+        prop: 'status',  // prop接收数据
+        label: '位置状态', // label名
+      },{
+        width: '200',  // 宽度
+        prop: 'history',  // prop接收数据
+        label: '历史信息', // label名
+      }
     ]
   }

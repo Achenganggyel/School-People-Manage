@@ -31,7 +31,7 @@
 					</span>
 					<template #dropdown>
 						<el-dropdown-menu>
-							<a href="https://github.com/lin-xin/SchoolPeople_Manage" target="_blank">
+							<a href="https://github.com/Achenganggyel/School-People-Manage" target="_blank">
 								<el-dropdown-item>项目仓库</el-dropdown-item>
 							</a>
 							<el-dropdown-item command="user">个人中心</el-dropdown-item>

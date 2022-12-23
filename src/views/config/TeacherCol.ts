@@ -1,6 +1,6 @@
 export const TeacherCol = {
     cols: [{
-        width: '150',  // 宽度
+        width: '100',  // 宽度
         type: 'input',  // 类型
         prop: 'id',  // prop接收数据
         label: '工号', // label名
@@ -33,6 +33,12 @@ export const TeacherCol = {
         prop: 'department',
         label: '系',
         dict: 'department'
+      },{
+        width:'200',
+        type:'select',
+        prop:'major',
+        label:'专业',
+        dict:'major'
       },
       {
         width: '150',
@@ -41,10 +47,10 @@ export const TeacherCol = {
         label: '职位',
       },
       {
-        width: '80',
+        width: '20',
         type: 'select',
         prop: 'status',
-        label: '工作状态',
+        label: '状态',
         dict: 'status'
       },{
         width: '150',
@@ -57,11 +63,17 @@ export const TeacherCol = {
         prop: 'birth',
         label: '出生日期',
       },{
-        width: '150',
+        width: '50',
         type: 'input',
         prop: 'thism_attendance',
-        label: '本月出勤率'
+        label: '出勤率'
       },{
+        width: '100',
+        type: 'input',
+        prop: 'mailbox',
+        label: '邮箱账号'
+      },
+      {
         width: '150',
         type: 'input',
         prop: 'lecture',

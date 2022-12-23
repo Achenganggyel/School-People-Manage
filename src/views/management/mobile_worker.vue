@@ -2,44 +2,45 @@
 	<div>
 		<div class="container">
 			<div class="handle-box">
-				<el-select v-model="query.address" placeholder="地址" class="handle-select mr10">
-					<el-option key="1" label="广东省" value="广东省"></el-option>
-					<el-option key="2" label="湖南省" value="湖南省"></el-option>
-				</el-select>
-				<el-input v-model="query.name" placeholder="用户名" class="handle-input mr10"></el-input>
-				<el-button type="primary" :icon="Search" @click="handleSearch">搜索</el-button>
-				<el-button type="primary" :icon="Plus">新增</el-button>
+				<el-input v-model="query.name" placeholder="姓名" class="handle-input"></el-input>
+				<el-button type="subManage" :icon="Search" @click="handleSearch">搜索</el-button>
+				<el-button type="subManage" :icon="Plus">新增</el-button>
 			</div>
 			<el-table :data="tableData" border class="table" ref="multipleTable" header-cell-class-name="table-header">
-				<el-table-column prop="id" label="ID" width="55" align="center"></el-table-column>
-				<el-table-column prop="name" label="用户名"></el-table-column>
-				<el-table-column label="账户余额">
-					<template #default="scope">￥{{ scope.row.money }}</template>
-				</el-table-column>
-				<el-table-column label="头像(查看大图)" align="center">
-					<template #default="scope">
-						<el-image
-							class="table-td-thumb"
-							:src="scope.row.thumb"
-							:z-index="10"
-							:preview-src-list="[scope.row.thumb]"
-							preview-teleported
-						>
-						</el-image>
+				<el-table-column prop="name" label="姓名" width="100" align="center"></el-table-column>
+				<el-table-column prop="gender" label="性别" width="80" align="center"></el-table-column>
+				<el-table-column sortable prop="entry" label="本次进入日期" width="150" align="center"></el-table-column>
+				<el-table-column sortable prop="avoid_reg" label="免登记" width="100" align="center">
+					<template #default="mobile_data">
+						<el-tag
+						:type="mobile_data.row.avoid_reg===1?'success':'danger'">
+						<template v-if="mobile_data.row.avoid_reg===1">
+							是
+						</template>
+						<template v-else>
+							否
+						</template>
+					</el-tag>
 					</template>
 				</el-table-column>
-				<el-table-column prop="address" label="地址"></el-table-column>
-				<el-table-column label="状态" align="center">
-					<template #default="scope">
+				<el-table-column prop="status" label="位置状态" width="120" align="center">
+					<template #default="mobile_data">
 						<el-tag
-							:type="scope.row.state === '成功' ? 'success' : scope.row.state === '失败' ? 'danger' : ''"
+						:type="mobile_data.row.status===1?'sucess':mobile_data.row.status===0?'warning':'info'"
 						>
-							{{ scope.row.state }}
+						<template v-if="mobile_data.row.status===1">
+							仍在校
+						</template>
+						<template v-else-if="mobile_data.row.status===0">
+							暂离开
+						</template>
+						<template v-else-if="mobile_data.row.status===-1">
+							已离开
+						</template>
 						</el-tag>
 					</template>
 				</el-table-column>
-
-				<el-table-column prop="date" label="注册时间"></el-table-column>
+				<el-table-column prop="history" label="历史信息" width="300" align="center"></el-table-column>
 				<el-table-column label="操作" width="220" align="center">
 					<template #default="scope">
 						<el-button text :icon="Edit" @click="handleEdit(scope.$index, scope.row)" v-permiss="15">
@@ -50,6 +51,7 @@
 						</el-button>
 					</template>
 				</el-table-column>
+
 			</el-table>
 			<div class="pagination">
 				<el-pagination
@@ -66,11 +68,17 @@
 		<!-- 编辑弹出框 -->
 		<el-dialog title="编辑" v-model="editVisible" width="30%">
 			<el-form label-width="70px">
-				<el-form-item label="用户名">
+				<el-form-item label="姓名">
 					<el-input v-model="form.name"></el-input>
 				</el-form-item>
-				<el-form-item label="地址">
-					<el-input v-model="form.address"></el-input>
+				<el-form-item label="性别">
+					<el-input v-model="form.gender"></el-input>
+				</el-form-item>
+				<el-form-item label="本次进入日期">
+					<el-input v-model="form.entry"></el-input>
+				</el-form-item>
+				<el-form-item label="位置状态">
+					<el-input v-model="form.status"></el-input>
 				</el-form-item>
 			</el-form>
 			<template #footer>
@@ -87,15 +95,16 @@
 import { ref, reactive } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import { Delete, Edit, Search, Plus } from '@element-plus/icons-vue';
-import { fetchData } from '../../../src/api/index';
+import { fetchMobile } from '../../../src/api/index';
+import { table } from 'console';
 
 interface TableItem {
-	id: number;
 	name: string;
-	money: string;
-	state: string;
-	date: string;
-	address: string;
+	gender: string;
+	entry:string;
+	avoid_reg:number;
+	status: number;
+	history: string;
 }
 
 const query = reactive({
@@ -108,7 +117,7 @@ const tableData = ref<TableItem[]>([]);
 const pageTotal = ref(0);
 // 获取表格数据
 const getData = () => {
-	fetchData().then(res => {
+	fetchMobile().then(res => {
 		tableData.value = res.data.list;
 		pageTotal.value = res.data.pageTotal || 50;
 	});
@@ -143,20 +152,26 @@ const handleDelete = (index: number) => {
 const editVisible = ref(false);
 let form = reactive({
 	name: '',
-	address: ''
+	gender: '男',
+	entry:'',
+	status: -1
 });
 let idx: number = -1;
 const handleEdit = (index: number, row: any) => {
 	idx = index;
 	form.name = row.name;
-	form.address = row.address;
+	form.gender = row.gender
+	form.entry = row.entry
+	form.status = row.status
 	editVisible.value = true;
 };
 const saveEdit = () => {
 	editVisible.value = false;
 	ElMessage.success(`修改第 ${idx + 1} 行成功`);
 	tableData.value[idx].name = form.name;
-	tableData.value[idx].address = form.address;
+	tableData.value[idx].gender = form.gender;
+	tableData.value[idx].entry = form.entry
+	tableData.value[idx].status = form.status
 };
 </script>
 
@@ -167,20 +182,38 @@ const saveEdit = () => {
 
 .handle-select {
 	width: 120px;
+	margin-left: 5%;
 }
 
 .handle-input {
 	width: 300px;
+	margin-left: 10px;
 }
 .table {
 	width: 100%;
 	font-size: 14px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
-.red {
+.el-button--subManage{
+	background-color: #fa7e2316;
+	border-color: #fa7e2316;
 	color: #ff0000;
+	margin-left: 15px;
+}	
+.el-button--subManage:hover{
+	background-color: #fba414;
+	border-color: #fba414;
+	color:#fff;
+}	
+
+.blue{
+	background-color:#5698c330;
+	border-color:#5698c330;
 }
-.mr10 {
-	margin-right: 10px;
+.red{
+	background-color: #e3b4b875;
+	border-color:#e3b4b875;
 }
 .table-td-thumb {
 	display: block;

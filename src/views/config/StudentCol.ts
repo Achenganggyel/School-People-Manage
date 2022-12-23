@@ -1,49 +1,78 @@
 export const TeacherCol = {
     cols: [{
-        width: '150',  // 宽度
-        type: 'select',  // 类型
-        prop: 'manageposttype',  // prop接收数据
-        label: '分期', // label名
-        dict: 'manageposttype'  //  匹配是哪一个字典
+        width: '100',  // 宽度
+        prop: 'id',  // prop接收数据
+        label: '学号', // label名
+        dict: 'id'  //  匹配是哪一个字典
       },
       {
         width: '200',
         type: 'input',
-        prop: 'issuingauthority',
-        label: '机构',
+        prop: 'name',
+        label: '姓名',
+        dict:'name'
+      },{
+        width: '50',
+        type: 'select',
+        prop: 'gender',
+        label: '性别',
+        dict:'gender'
       },
       {
         width: '150',
         type: 'select',
-        prop: 'manageposttype',
-        label: '岗位类别',
-        dict: 'manageposttype'
+        prop: 'college',
+        label: '学院',
+        dict: 'college'
       },
       {
         width: '200',
         type: 'select',
-        prop: 'careertreecode',
-        label: '岗位名称',
-        dict: 'careertreecode'
+        prop: 'department',
+        label: '系',
+        dict: 'department'
       },
       {
-        width: '150',
-        type: 'datePicker',
-        prop: 'manageposttype',
-        label: '报名时间',
+        width:'200',
+        type:'select',
+        prop:'major',
+        label:'专业',
+        dict:'major'
+      },{
+        width:'150',
+        type:'select',
+        prop:'birth',
+        label:'生日',
+        dict:'birth'
       },
       {
-        width: '150',
+        width: '40',
         type: 'select',
-        prop: 'validStatus',
-        label: '审核状态',
-        dict: 'validStatus'
+        prop: 'status_s',
+        label: '学业情况',
+        dict: 'status'
       },
       {
-        width: '',
+        width: '40',
+        type: 'select',
+        prop: 'status_l',
+        label: '位置',
+        dict: 'status'
+      },{
+        width: '100',  // 宽度
+        prop: 'card_id',  // prop接收数据
+        label: '校卡号', // label名
+        dict: 'card_id'  //  匹配是哪一个字典
+      },{
+        width: '100',
         type: 'input',
-        prop: 'appliConditions',
-        label: '详细信息',
-      },
+        prop: 'mailbox',
+        label: '邮箱账号'
+      },{
+        width: '300',
+        prop: 'dorm',
+        label: '宿舍',
+        dict: 'dorm'
+      }
     ]
   }

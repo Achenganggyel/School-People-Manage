@@ -1,49 +1,64 @@
 export const TeacherCol = {
-    cols: [{
-        width: '150',  // 宽度
-        type: 'select',  // 类型
-        prop: 'manageposttype',  // prop接收数据
-        label: '分期', // label名
-        dict: 'manageposttype'  //  匹配是哪一个字典
+      cols: [{
+        width: '100',  // 宽度
+        type: 'input',  // 类型
+        prop: 'id',  // prop接收数据
+        label: '工号', // label名
+        dict: 'id'  //  匹配是哪一个字典
       },
       {
         width: '200',
         type: 'input',
-        prop: 'issuingauthority',
-        label: '机构',
+        prop: 'name',
+        label: '姓名',
+        dict:'name'
       },
       {
-        width: '150',
+        width: '50',
         type: 'select',
-        prop: 'manageposttype',
-        label: '岗位类别',
-        dict: 'manageposttype'
+        prop: 'gender',
+        label: '性别',
+        dict:'gender'
       },
       {
         width: '200',
         type: 'select',
-        prop: 'careertreecode',
-        label: '岗位名称',
-        dict: 'careertreecode'
+        prop: 'department',
+        label: '部门',
+        dict: 'department'
       },
       {
+        width: '150',
+        type: 'input',
+        prop: 'post',
+        label: '职位',
+      },
+      {
+        width: '20',
+        type: 'select',
+        prop: 'status',
+        label: '状态',
+        dict: 'status'
+      },{
         width: '150',
         type: 'datePicker',
-        prop: 'manageposttype',
-        label: '报名时间',
-      },
-      {
+        prop: 'reg_time',
+        label: '注册时间',
+      },{
         width: '150',
-        type: 'select',
-        prop: 'validStatus',
-        label: '审核状态',
-        dict: 'validStatus'
-      },
-      {
-        width: '',
+        type: 'datePicker',
+        prop: 'birth',
+        label: '出生日期',
+      },{
+        width: '50',
         type: 'input',
-        prop: 'appliConditions',
-        label: '详细信息',
-      },
+        prop: 'thism_attendance',
+        label: '出勤率'
+      },{
+        width: '100',
+        type: 'input',
+        prop: 'mailbox',
+        label: '邮箱账号'
+      }
     ]
   }
