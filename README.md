@@ -165,3 +165,4 @@ SCHOOLPEOPLE_MANAGE/
 ## License
 
 [MIT](https://github.com/Achenganggyel/School-People-Manage/blob/main/LICENSE)
+# Pines-Recognition
